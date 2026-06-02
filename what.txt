@@ -1,0 +1,131 @@
+What?
+Linus torvalds 1991 --> Linux
+
+create linux operating system in c++
+
+day1 create operting system
+day2 made some feature 
+day3 made some upgrade
+day4 made some change
+
+He need to revert the change but that time they have no idea he is totally confuse about that.
+after that he create a git(Global information Tracker) vcs(version controlling system).
+	That made change code named version1, versionn2, version3 
+
+Git - global information tracker
+vcs - version control system.
+Built by linus torvald
+
+-----------------------------------
+
+Why? 
+Developer only write code they have multiple version.
+
+DevOps need to deploy versions.
+he find version 2.5 is correct to deploy
+
+CI/CD --> less time to deploy | less time to market 
+DevOps need to rollback the system
+For colloboration with team
+
+------------------------------------
+
+How? 
+File system remove file using the rm file.name 
+issue with filesystem
+* we can't see version to that file
+* ls -l last updated time we can't see who created this file how modified we can't track
+* we can't track author 
+* we can't recovery in file system
+ that'swhy file system is not safe.
+
+-------------------------------------
+
+ Version Control system.
+
+git init :  that inalize folder which one is tracked this create empty git repo 
+git add : (stagging) staging area.
+git commit -m "message"
+git restore --stagged filename : untracked file 
+git config --global user.name "name"
+git config --global user.email "admin@gmail.com"
+git restore filename : That restore delete file in filesys
+
+-----------------------------------------
+
+git architecture
+untracked |   staging  | tracked
+git add   > git commit > tracked  
+
+-------------------------------------------
+
+-Task-
+create a github account
+login to playground
+cheack the git-help.txt
+create a folder inialize empty git repo
+add files
+commit them 
+practice git commands
+post on linkedin
+
+(01:29:20)---------------------------------------------
+
+Git(Distributed Version controlling system)
+
+  repo|local -- (userone)
+   |
+ (usertwo)
+
+ your repois shared to others
+
+me  0< Shell/Script  shared to other 
+
+--------------------------------------------------------
+
+git is local vcs but if you want to share your repo or collabrate with others.
+
+github(Microsoft)
+bitbucket(Atlassian)
+gitlab  
+
+all above is distributive vcs.
+
+--------------------------------------------------------
+
+git works on local repo tracking and versioing 
+whenever you need to collaborate and make it public 
+
+create github profile
+
+local --> github(remote repo)
+srva --> srvb
+privatekey --> publickey
+
+(01-44-01)-------------------------------------------
+
+
+how to create a repo on local
+how to create a repo on Github(mkdir)
+how to create SSH keys(ssh-keygen)
+how to add public key to github in setting 
+how to add remote origin url
+
+
+ssh-keygen -t rsa -b 4096
+git push origin master
+git remote add origin "ssh link"
+git remote -v 
+
+
+GIT_SSH_COMMAND="ssh -i ./ec2-srv-key" git push origin main
+
+
+git init
+git add filename
+git commit -m "Message"
+git branch -M main
+git remote add url.git
+git push -u origin main 
+
+
