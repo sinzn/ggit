@@ -105,27 +105,35 @@ privatekey --> publickey
 (01-44-01)-------------------------------------------
 
 
-how to create a repo on local
-how to create a repo on Github(mkdir)
-how to create SSH keys(ssh-keygen)
-how to add public key to github in setting 
-how to add remote origin url
+create a repo on local
+create a repo on Github(mkdir)
+create SSH keys(ssh-keygen)
+add public key to github in setting 
+add remote origin url
+Push local repo to github
+pull remote changes from github
 
+[ssh-keygen -t rsa -b 4096]
 
-ssh-keygen -t rsa -b 4096
 git push origin master
 git remote add origin "ssh link"
 git remote -v 
 
-
-GIT_SSH_COMMAND="ssh -i ./ec2-srv-key" git push origin main
-
+GIT_SSH_COMMAND="ssh -i /home/cloudshell-user/ec2-srv" git push origin main
 
 git init
 git add filename
 git commit -m "Message"
 git branch -M main
 git remote add url.git
+
 git push -u origin main 
+
+(01:59:40)------------------------------------------------------
+
+Happy Learning 
+
+git clone url --> to clone github repo to my localrepo
+
 
 
