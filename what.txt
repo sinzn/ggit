@@ -161,3 +161,5 @@ creating the branch
 git checkout -b devOps
 git branch -- to check branch
 git checkout main -- it switch brach b/w main to dev
+
+
