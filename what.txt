@@ -137,3 +137,26 @@ git clone url --> to clone github repo to my localrepo
 
 using clone copy remote repo to local
 
+git clone
+fork
+
+(02:20:00)--------------------------------------------------------
+
+Branching 
+
+the practice of creating a separate workspace—or "parallel universe"—within a repository to develop features, 
+fix bugs, or experiment with ideas without impacting the primary stable code
+
+
+(---)
+(---)  - Branches
+(---)
+ | |  -- Steam
+ | |
+Roots
+
+initally first branch is main/master -- where tree start
+
+
+
+
